@@ -6,6 +6,7 @@
             this.search();
             this.mobileMenu();
             this.itemHover();
+            this.myProgn();
         },
         litera: function () {
             jQuery('.logo-litera').each(function () {
@@ -48,6 +49,13 @@
             }, function () {
                 jQuery(this).closest('.col-item').find('h4 a').removeClass('hover')
             })
+        },
+        myProgn : function () {
+            jQuery("body").prognroll({
+                height: 3,
+                color: "#ec1c1c",
+                custom: false
+            });
         }
     };
     jQuery(document).ready(function () {
