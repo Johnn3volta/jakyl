@@ -31,7 +31,10 @@
         padding-bottom: 0
         margin-bottom: 0
 
-
+  .ispage
+    .top-menu
+      top: 65px
+      position: relative
 
 // ≥768px
 +media-breakpoint-down(sm)
@@ -58,7 +61,7 @@
     margin-bottom: $gutter/2
     padding-bottom: $gutter
     border-bottom: 1px solid rgba(#fff, .05)
-    &-meta,h4
+    &-meta, h4
       padding: 0 $gutter
     a
       img
@@ -72,9 +75,22 @@
   .cat-header
     &-block
       padding: 50px
-      h1,h2
+      h1, h2
         font-size: 28px
 
+  .page-header
+    &-meta
+      h1
+        font-size: 24px
+        margin: 10px 0 0
+    &.overlay::before
+      background-image: linear-gradient(rgba(#000, .3), rgba(#000, .75))
+    &-content
+      bottom: 10%
+
+  .article-body
+    blockquote
+      margin: 0
 
 // ≥576px
 +media-breakpoint-down(xs)
